@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Styled Form</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Form Container */
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        /* Input Group */
+        .input-group {
+            position: relative;
+            margin-bottom: 25px;
+            width:360px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #ff758c;
+            border-radius: 8px;
+            outline: none;
+            background-color: #fff;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-group input:focus {
+            border-color: #ff4d6d;
+        }
+
+        .input-group label {
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: 14px;
+            color: #666;
+            background-color: white;
+            padding: 0 5px;
+        }
+
+        /* Moving Button */
+        button {
+            background-color: #ff758c;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        button:hover {
+            background-color: #ff4d6d;
+        }
+
+        button:active {
+            background-color: #ff4d6d;
+            transform: scale(0.95);
+        }
+
+        /* Button Animation */
+        @keyframes moveButton {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(20px); }
+            50% { transform: translateX(0); }
+            75% { transform: translateX(-20px); }
+            100% { transform: translateX(0); }
+        }
+
+        #submitBtn:hover {
+            animation: moveButton 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1> Create Account </h1>
+        <form id="userForm">
+            <div class="input-group">
+                <input type="text" id="firstname" required>
+                <label for="firstname">Firstname</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="lastname" required>
+                <label for="lastname">Lastname</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="username" required>
+                <label for="username">Username</label>
+            </div>
+            <div class="input-group">
+                <input type="phone" id="phone" required>
+                <label for="phone">Phone</label>
+            </div>
+            <div class="input-group">
+                <input type="mail" id="mail" required>
+                <label for="mail">Mail id</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label for="password"> Conform Password</label>
+            </div>
+            <button type="submit" id="submitBtn">Create Account</button><br>
+           
+        </form>
+    </div>
+</body>
+</html>

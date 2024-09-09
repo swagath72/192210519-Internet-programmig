@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        /* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* Event Card Styles */
+.event {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Event Title */
+.event h2 {
+    font-size: 24px;
+    color: #4e54c8;
+    margin-bottom: 10px;
+}
+
+/* Event Date */
+.event-date {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Event Description */
+.event p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Event Location */
+.event-location {
+    font-style: italic;
+    color: #888;
+}
+
+/* Button Style */
+button {
+    display: inline-block;
+    background-color: #4e54c8;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #8f94fb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .event h2 {
+        font-size: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Upcoming Events</h1>
+
+    <div class="event" onclick="window.location.href='event1.html';">
+        <h2>Event 1: Workshop on Web Development</h2>
+        <p class="event-date">Date: January 15, 2024</p>
+        <p>Description: Learn the basics of web development in this interactive workshop.</p>
+        <p class="event-location">Location: Online</p>
+    </div>
+
+    <div class="event" onclick="window.location.href='event2.html';">
+        <h2>Event 2: Data Science Summit</h2>
+        <p class="event-date">Date: February 10, 2024</p>
+        <p>Description: Discover the latest trends and tools in data science.</p>
+        <p class="event-location">Location: New York, NY</p>
+    </div>
+
+    <div class="event" onclick="window.location.href='event3.html';">
+        <h2>Event 3: AI in Healthcare</h2>
+        <p class="event-date">Date: March 5, 2024</p>
+        <p>Description: Explore the use of AI technologies in the healthcare industry.</p>
+        <p class="event-location">Location: San Francisco, CA</p>
+    </div>
+
+    <div class="event" onclick="window.location.href='event4.html';">
+        <h2>Event 4: Cybersecurity Conference</h2>
+        <p class="event-date">Date: March 20, 2024</p>
+        <p>Description: Join industry experts to discuss the latest cybersecurity challenges.</p>
+        <p class="event-location">Location: Online</p>
+    </div>
+
+    <div class="event" onclick="window.location.href='event5.html';">
+        <h2>Event 5: Blockchain Expo</h2>
+        <p class="event-date">Date: April 8, 2024</p>
+        <p>Description: Learn about blockchain technology and its applications in different industries.</p>
+        <p class="event-location">Location: Chicago, IL</p>
+    </div>
+
+    <div class="event" onclick="window.location.href='event6.html';">
+        <h2>Event 6: Startup Pitch Event</h2>
+        <p class="event-date">Date: May 15, 2024</p>
+        <p>Description: Watch innovative startups pitch their ideas to investors.</p>
+        <p class="event-location">Location: Online</p>
+    </div>
+
+    <div class="event" onclick="window.location.href='event7.html';">
+        <h2>Event 7: Cloud Computing Conference</h2>
+        <p class="event-date">Date: June 12, 2024</p>
+        <p>Description: Discuss the future of cloud computing with leading experts.</p>
+        <p class="event-location">Location: Boston, MA</p>
+    </div>
+
+    <div class="event" onclick="window.location.href='event8.html';">
+        <h2>Event 8: Marketing Trends 2024</h2>
+        <p class="event-date">Date: July 22, 2024</p>
+        <p>Description: Learn the latest strategies in digital marketing.</p>
+        <p class="event-location">Location: Miami, FL</p>
+    </div>
+
+    <div class="event" onclick="window.location.href='event9.html';">
+        <h2>Event 9: E-Commerce Strategies Conference</h2>
+        <p class="event-date">Date: August 30, 2024</p>
+        <p>Description: Improve your e-commerce strategies with insights from industry leaders.</p>
+        <p class="event-location">Location: Online</p>
+    </div>
+
+    <div class="event" onclick="window.location.href='event10.html';">
+        <h2>Event 10: Sustainability in Tech</h2>
+        <p class="event-date">Date: September 18, 2024</p>
+        <p>Description: Explore sustainable practices in the tech industry.</p>
+        <p class="event-location">Location: Los Angeles, CA</p>
+    </div>
+
+</body>
+</html>
